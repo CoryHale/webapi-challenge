@@ -10,8 +10,8 @@ server.use('/api/projects', projectRouter);
 server.use('/api/actions', actionRouter);
 
 server.get('/', (req, res) => {
-    console.log('Let\'s get started');
-})
+    res.send(`<h1>Let's get started!</h1>`)
+});
 
 server.listen(4000, () => {
     console.log('server listening on port 4000');
